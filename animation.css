@@ -1,0 +1,42 @@
+
+@keyframes slideFromTop {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes PLZOverlayStartAnimation {
+    from{ transform: translateX(100%); }
+    70%{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes pageSlideoutAnimation {
+    to{
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+}
+
+@keyframes topbarCardAnimation {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes optionAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

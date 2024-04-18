@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="@nekupaw / Tristan Heubner">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="meida-prefers.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script> if (window.innerWidth <= 1000) window.location.href = 'https://m.hausmeister-mueller.com'; </script>
+    <script defer src="styleJS.js"></script>
+    <title>HMS Müller / Startseite</title>
+</head>
+<body>
+<div id="cursorWrapper" class="normal"></div>
+<div class="plz-wrapper interactable">
+    <div class="plzcontainer-wrapper">
+        <label>
+            <input type="text" name="plz-input" id="plz-input" class="plzinput-wrapper" placeholder="PLZ">
+        </label>
+        <button class="plzbutton-wrapper">
+                <span class="material-symbols-rounded" style="color: white; font-size: 45px">navigate_next</span>
+        </button>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 7px">
+        <p style="font-size: 22px; display: flex; align-items: center; gap: 5px; pointer-events: none;"><span class="material-symbols-rounded ico">location_on</span>Dienstleistungen im Allgäu</p>
+        <p style="font-size: 11px; pointer-events: none;">Bitte beachten Sie, dass unsere Dienstleistungen möglicherweise
+            nicht flächendeckend <br> in ganz Deutschland verfügbar sind. <br> Die Verfügbarkeit kann je nach Standort variieren.
+            Bitte kontaktieren Sie uns für weitere Informationen.</p>
+    </div>
+</div>
+<div class="wrapper" id="top-wrapper">
+    <div id="top-wrapper-bar">
+        <div style="position: fixed; display: flex; gap: 15px">
+            <div class="top-wrapper-branding interactable" id="brand">
+                <div class="logo-wide" style="height: 150px; width: 450px"></div>
+            </div>
+            <div class="top-wrapper-links-container">
+                <a href="#Qualität" btn-type="link" class="interactable" ico-type="star" style="animation-delay: 0.4s">Qualität</a>
+                <a href="#Preise" btn-type="link" class="interactable" ico-type="sell" style="animation-delay: 0.5s">Preise</a>
+                <a href="#Öffnungszeiten" btn-type="link" class="interactable" ico-type="event_available" style="animation-delay: 0.6s">Öffnungszeiten</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper" id="Qualität" style="display: flex; align-items: center; position: relative">
+    <div style="font-size: 150px; margin-left: 50px; display: flex; flex-direction: column; gap: 50px;">
+        <div style="display: flex; flex-direction: column">
+            <div id="about-wrapper-text" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                <p class="hiddenByScroll">Ein</p>
+                <p class="hiddenByScroll">Ein-Mann-Betrieb</p>
+                <p class="hiddenByScroll">welcher</p>
+                <p class="hiddenByScroll">Wert</p>
+                <p class="hiddenByScroll">auf</p>
+                <p class="hiddenByScroll">präzises,</p>
+                <p class="hiddenByScroll">sauberes</p>
+                <p class="hiddenByScroll">und</p>
+                <p class="hiddenByScroll">ordentliches</p>
+                <p class="hiddenByScroll">Arbeiten</p>
+                <p class="hiddenByScroll">legt.</p>
+            </div>
+            <p class="fromLeft hiddenByScroll gtxt" style="font-size: 25px;">- Felix Müller (Geschäftsführer)</p>
+        </div>
+        <button type="button" class="interactable fromLeft hiddenByScroll">mehr erfahren <span class="material-symbols-rounded">chevron_right</span></button>
+    </div>
+</div>
+<div class="wrapper" id="Preise" style="margin-top: 20vh">
+    <div class="headline">
+        <p class="hiddenByScroll headlineInner hiddenByScroll" style="font-size: 50px; display: flex; align-items: center; gap: 5px;"><span class="material-symbols-rounded" style="font-size: 60px">verified_user</span>Was ich für meine Kunden anbiete</p>
+    </div>
+    <div style="display: flex; width: 100vw; flex-direction: column; justify-content: center; align-items: center; padding-top: 10vh; gap: 2vh">
+        <div style="display: flex; align-items: center; gap: 10vw">
+            <div class="option hiddenByScroll interactable">
+                <h1>Grundreinigung</h1>
+                <div class="list">
+                    <p>&#8226; Saugen</p>
+                    <p>&#8226; Wischen</p>
+                    <p>&#8226; Badreinigung</p>
+                </div>
+                <div class="price-card">
+                    22,50 €/ Std
+                </div>
+            </div>
+            <div class="option hiddenByScroll interactable" style="animation-delay: 0.3s">
+                <h1>Grundreinigung Extra</h1>
+                <div class="list">
+                    <p>&#8226; Saugen</p>
+                    <p>&#8226; Wischen</p>
+                    <p>&#8226; Badreinigung</p>
+                    <p>&#8226; Fenster putzen</p>
+                </div>
+                <div class="price-card">
+                    25,00 €/ Std
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 100px; font-size: 20px; text-align: center; pointer-events: none">Weitere Anfragen wie Schränke reparieren,
+            Hecke schneiden, Rasen mähen, <br> Dächer reinigen, etc nach Absprache.</p>
+    </div>
+</div>
+
+<div id="Öffnungszeiten" class="wrapper">
+    <div class="headline">
+        <p class="headlineInner">Öffnungszeiten</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 20px">
+        <p>Montag bis Freitag: 13:00-20:00 Uhr</p>
+        <p>Samstag: 9:00-20:00 Uhr</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>

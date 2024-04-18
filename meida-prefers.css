@@ -1,0 +1,45 @@
+@media(prefers-reduced-motion){
+    .show{
+        transition: none;
+    }
+    #cursorWrapper{
+        display: none;
+    }
+}
+
+@media(prefers-color-scheme: dark){
+    *{
+        color: white; !important;
+    }
+    .gtxt{
+        color: rgba(255, 255, 255, 0.7);
+    }
+    html{
+        background-color: #090909;
+    }
+    #Preise .option .list p{
+        color: black; !important;
+    }
+    #Preise .option h1{
+        color: black;
+    }
+    :root{
+        --mainColor: #aaf1ff;
+        --mainColorLight: #caf6ff;
+    }
+    #cursorWrapper span{
+        color: black;
+    }
+    #cursorWrapper{
+        background-color: var(--mainColor);
+    }
+    .plz-wrapper p{
+        color: black;
+    }
+    .plz-wrapper .ico{
+        color: black;
+    }
+    .plzinput-wrapper{
+        color: black;
+    }
+}
